@@ -10,7 +10,7 @@ Diogo : dreedd020@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 
-> Diante dos desafios encontrados durante a pandemia a lanchonete BD uma startup no ramo é uma tentativa de seus donos para tentar seu negócio próprio buscando oportunidades de negócio. Com exemplos de diversos negócios semelhantes no mesmo ramo, o foco principal da lanchonete é a organização buscando sair na frente e se manter sempre firme tendo em vista que muitas lanchonetes tem uma queda brusca nas vendas logo após o "boom" inicial. Com um sistema de negócio simples mas eficiente, o objetivo é um sucesso a curto prazo e a expansão para franquias seguindo a mesma regra de negócio implementada em seu sistema de controle de modo a garantir a padronização e qualidade.
+> Diante dos desafios encontrados durante a pandemia, a lanchonete BD, uma startup no ramo, é uma tentativa de seus donos para tentar seu negócio próprio, buscando oportunidades de negócio. Com exemplos de diversos negócios semelhantes no mesmo ramo, o foco principal da lanchonete é a organização buscando sair na frente e se manter sempre firme, tendo em vista que muitas lanchonetes tem uma queda brusca nas vendas logo após o "boom" inicial. Com um sistema de negócio simples, mas eficiente, o objetivo é um sucesso a curto prazo e a expansão para franquias, seguindo a mesma regra de negócio implementada em seu sistema de controle, de modo a garantir a padronização e qualidade.
  
 
 ### 3.MINI-MUNDO<br>
