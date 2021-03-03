@@ -6,7 +6,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Claudio Magno : claudiomagno_21@hotmail.com<br>
-Diogo : dreedd020@gmail.com<br>
+Diogo Tomas : dreedd020@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 
