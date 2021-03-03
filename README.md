@@ -27,12 +27,10 @@ O cliente, que possui o atributo nome, possui um telefone com os atributos tipo,
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/628d8f4c1e485196ed16fbfcc0fece07dea3d5e2/images/image.png?raw=true "Title")
+![Arquivo PDF do Protótipo da lanchonete](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/263c3fec9ec8afb584d38f284496825f779e8bf2/arquivos/mockup.pdf)
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
