@@ -80,16 +80,35 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/logico%20v3.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+        create table FUNCIONARIO (cod_func int not null, nome_func varchar, tel_func varchar, primary key (cod_func));
         
+        create table CLIENTE (cod_cliente int not null, nome_cliente varchar, primary key (cod_cliente));
+        
+        create table PEDIDO (cod_pedido int not null, data_pedido time, cod_cliente_pedido int, cod_func_pedido int , primary key (cod_pedido), foreign key(cod_cliente_pedido) references CLIENTE (cod_cliente), foreign key (cod_func_pedido) references FUNCIONARIO (cod_func)));
+        
+        create table TELEFONE (codigo int not null, telefone varchar, foreign key (codigo) references CLIENTE (cod_cliente));
+        
+        create table ENDERECO (cod_cliente int not null, rua_cliente varchar, num_casa_cliente int, bairro_cliente varchar, cidade_cliente varchar, uf_cliente varchar, foreign key (cod_cliente) references CLIENTE (cod_cliente));
+        
+        create table CARDAPIO (cod_prod int not null, nome_prod varchar, desc_prod varchar, valor_prod float, primary key (cod_prod));
+        
+        create table CARDAPIO_PEDIDO (cod_item int not null, cod_pedido int, quant_pedido int, foreign key (cod_item) references CARDAPIO (cod_prod), foreign key (cod_pedido) references PEDIDO (cod_pedido));
+ 
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+        insert into cardapio values ((1,'X-Bacon', 'Pão, 2x carne, bacon, alface e salada.', 14.00), (2,'X-Tudo','Pão, carme, bacon, ovo, milho, alface e salada.', 15.00), (3,'X-Egg','Pão, carne, 2x ovo, bacon, alface e salada.', 14.00), (4,'X-Egg Bacon', 'Pão, 2x carne, 2x ovo, bacon, alface e salada.', 16.00), (5,'Misto', 'Pão, presuto e queijo.', 12.00));
+
+        insert into cliente values ((1, 'Claudio'), (2, 'Isabelly'), (3, 'Gabriel'), (4, 'Julio'), (5, 'Augusto'));
+
+        insert into endereco values ((1, 'Mossoró', 590, 'Barcelona', 'Serra', 'ES'),(3, 'Andorinhas', 12, 'Jacaraípe', 'Serra', 'ES'), (2, 'Cascardo', 175, 'Barcelona', 'Serra', 'ES'), (5, 'Alfredo Cunha', 154, 'Taquara', 'Serra', 'ES'), (4, 'Senhorio', 77, 'Barcelona', 'Serra', 'ES'));
+
+        insert into telefone values ((1, '(27) 99645-1234'), (3, '(27) 94521-8524'), (2, '(27) 99998-8524'), (4, '(27) 999645-12345'), (5, '(27) 99698-4785'));
+
+        insert into funcionario values ((1, 'Jorge', '(27) 99958-8954'), (2, 'Luiz', '(27) 99528-8966'), (3, 'Henrique', '(27) 99452-8524'), (4, 'Julia', '(27) 94521-5558'), (5, 'Isadora', '(27) 99784-7849'));
+
+        insert into pedido values ((1, '2020-02-12 19:44:21', 2, 1), (2, '2020-02-12 19:55:01', 1, 3), (3, '2020-02-12 20:12:36', 3, 3),(4, '2020-02-12 20:33:55', 4, 5), (5, '2020-02-12 20:55:12', 5, 4));
+
+        insert into cardapio_pedido values ((5, 1, 2), (4, 5, 1), (2, 3, 1), (3, 2, 3), (2, 4, 1));
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
