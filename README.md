@@ -115,19 +115,32 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
         select * from funcionario<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853391-9b43fd80-7c34-11eb-8ec5-2387acefc28a.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/01.png "Funcionario")
+        
         select * from cliente<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853474-b0b92780-7c34-11eb-8ab6-d6647510d781.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/02.png "Cliente")
+        
         select * from pedido<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853524-bc0c5300-7c34-11eb-8283-7ada84ebdeb7.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/03.png "Pedido")
+
         select * from telefone<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853649-e4944d00-7c34-11eb-85f5-929c2e6e559f.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/04.png "Telefone")
+
         select * from endereco<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853712-f83fb380-7c34-11eb-82d4-803e0e440d9f.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/05.png "Endereço")
+
         select * from cardapio<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853778-0ab9ed00-7c35-11eb-895d-2b2c366115c6.png)<br>
+        
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/06.png "Cardápio")
+
         select * from cardapio_pedido<br>
-        ![image](https://user-images.githubusercontent.com/65958197/109853861-20c7ad80-7c35-11eb-9351-4c81a5629cd2.png)<br>
+     
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/07.png "Cardápio Pedido")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
