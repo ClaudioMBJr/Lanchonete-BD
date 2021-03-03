@@ -7,7 +7,6 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 Claudio Magno : claudiomagno_21@hotmail.com<br>
 Diogo : dreedd020@gmail.com<br>
-...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 
@@ -15,12 +14,6 @@ Diogo : dreedd020@gmail.com<br>
  
 
 ### 3.MINI-MUNDO<br>
-
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 > O sistema tem como base gerenciar o funcionamento de uma lanchonete otimizando o rendimento do negócio como um todo.
 O cliente, que possui o atributo nome, possui um telefone com os atributos tipo, telefone e código, sendo o tipo como C (cliente), e está ligado à entidade endereço, com os atributos código do cliente, rua, numero, bairro, cidade e unidade federativa do cliente. O cliente faz o pedido por meio de um funcionário, que possui o atributo nome_cliente, codigo do funcionario e possui um telefone com o tipo F (funcionário). O pedido é realizado e é registrado a data e um código do pedido. Com o cardapio, é fornecido a quantidade do pedido e o cardápio possui os atributos nome do produto, ingrediente do produto e o código.
