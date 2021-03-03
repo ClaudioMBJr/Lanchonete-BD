@@ -114,31 +114,31 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-        select * from funcionario<br>
+        select * from funcionario
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/01.png "Funcionario")
         
-        select * from cliente<br>
+        select * from cliente
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/02.png "Cliente")
         
-        select * from pedido<br>
+        select * from pedido
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/03.png "Pedido")
 
-        select * from telefone<br>
+        select * from telefone
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/04.png "Telefone")
 
-        select * from endereco<br>
+        select * from endereco
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/05.png "Endereço")
 
-        select * from cardapio<br>
+        select * from cardapio
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/06.png "Cardápio")
 
-        select * from cardapio_pedido<br>
+        select * from cardapio_pedido
      
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/07.png "Cardápio Pedido")
 
