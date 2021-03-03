@@ -15,8 +15,8 @@ Diogo : dreedd020@gmail.com<br>
 
 ### 3.MINI-MUNDO<br>
 
-> O sistema tem como base gerenciar o funcionamento de uma lanchonete otimizando o rendimento do negócio como um todo.
-O cliente, que possui o atributo nome, possui um telefone com os atributos tipo, telefone e código, sendo o tipo como C (cliente), e está ligado à entidade endereço, com os atributos código do cliente, rua, numero, bairro, cidade e unidade federativa do cliente. O cliente faz o pedido por meio de um funcionário, que possui o atributo nome_cliente, codigo do funcionario e possui um telefone com o tipo F (funcionário). O pedido é realizado e é registrado a data e um código do pedido. Com o cardapio, é fornecido a quantidade do pedido e o cardápio possui os atributos nome do produto, ingrediente do produto e o código.
+> O sistema tem como base gerenciar o funcionamento de uma lanchonete otimizando o seu rendimento e a organização do negócio.
+O cliente, possui um código que servirá para sua identificação, nome, um ou mais telefones e endereço detalhado comportando desde estado até o número da casa. Nesse sistema também é armazedo os dados do funcionário que possui um telefone para contato e o nome, além do código de identificação. O cardápio é armazendao possuindo nome, descrição, valor e um código de identificação para cada produto. Por fim, essas 3 entidades (cliente, funcionário e cardápio) se relacionam onde o cliente ao escolher um pedido do cardápio o repassa para o funcionário onde se armazenam a data/hora do pedido e é gerado um novo código para o controle do mesmo.
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
