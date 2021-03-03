@@ -66,7 +66,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/conceitual v2 "Modelo Conceitual")
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/conceitual%20v2.png "Modelo Conceitual")
     
     
         
@@ -85,7 +85,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 
 ### 6	MODELO LÓGICO<br>
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/logico v3 "Modelo Lógico")
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/logico%20v3.png "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
