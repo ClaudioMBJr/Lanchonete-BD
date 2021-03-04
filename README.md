@@ -26,18 +26,11 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
 ![Arquivo PDF do Protótipo da lanchonete](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/263c3fec9ec8afb584d38f284496825f779e8bf2/arquivos/mockup.pdf)
 
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
-
- 
+* Relatório que apresente as informações de cada empregado que trabalha ou trabalhou na empresa, esse relatório deve conter: nome e telefone.
+* Relatório que mostre todas as transações de cada período e seu faturamento, esse relatório deve conter: descrição da transação, valor e data.
+* Relatório que mostre uma lista de prioridade dos produtos vendidos, apresentando quais produtos têm o maior retorno e quais têm o menor, esse relatório deve conter: nome do produto, valor, quantidade vendida em cada período.
+* Relatório que mostre a variedade de clientes no estabelecimento, clientes novos e clientes frequentes, esse relatório deve conter: código do cliente, as vendas ligadas à esse código e as datas.
+* Relatório que mostre as regiões com maior número de clientes cadastrados, contendo os resultados ordenados de forma decrescente pela quantidade de cada região, esse relatório deve conter: código do cliente, bairro, cidade e estado.
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
