@@ -36,7 +36,7 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
     b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+![Tabela de dados da LanchoneteBD](https://github.com/ClaudioMBJr/Lanchonete-BD/raw/master/arquivos/TabelaLanchoneteBD.xlsx?raw=true "Tabela - LanchoneteBD")
     
     
 ### 5.MODELO CONCEITUAL<br>
