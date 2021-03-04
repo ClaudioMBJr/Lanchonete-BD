@@ -33,9 +33,6 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
 * Relatório que mostre as regiões com maior número de clientes cadastrados, contendo os resultados ordenados de forma decrescente pela quantidade de cada região, esse relatório deve conter: código do cliente, bairro, cidade e estado.
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    
 ![Tabela de dados da LanchoneteBD](https://github.com/ClaudioMBJr/Lanchonete-BD/raw/master/arquivos/TabelaLanchoneteBD.xlsx?raw=true "Tabela - LanchoneteBD")
     
     
