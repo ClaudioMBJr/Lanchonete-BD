@@ -48,11 +48,35 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
+    FUNCIONARIO: Tabela que armazena informações relativas ao funcionário da lanchonete
+    cod_func: Campo que armazena o código específico do funcionário
+    nome_func: Campo que armazena o nome do funcionário
+    tel_func: Campo que armazena o telefone do funcionário
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    PEDIDO: Tabela que armazena informações relativas ao pedido
+    cod_pedido: Campo que armazena o código específico do pedido
+    data_pedido: Campo que armazena a data do pedido
+    
+    CARDAPIO: Tabela que armazena informações relativas ao cardápio
+    cod_prod: Campo que armazena o código do produto
+    nome_prod: Campo que armazena o nome do produto
+    desc_prod: Campo que armazena a descrição do produto
+    valor_prod: Campo que armazena o valor do produto
+    
+    TELEFONE: Tabela que armazena informações relativas ao telefone
+    cod_tel: Campo que armazena o código específico do telefone
+    telefone: Campo que armazena o número do telefone
+    
+    CLIENTE: Tabela que armazena informações relativas ao cliente
+    cod_cliente: Campo que armazena o código específico do cliente
+    nome_cliente: Campo que armazena o nome do cliente
+    
+    ENDERECO: Tabela que armazena informações relativas ao endereço do cliente
+    rua_cliente: Campo que armazena o nome da rua do cliente
+    num_casa_cliente: Campo que armazena o número da casa do cliente
+    bairro_cliente: Campo que armazena o nome do bairro do cliente
+    cidade_cliente: Campo que armazena o nome da cidade do cliente
+    uf_cliente: Campo que armazena o nome do estado do cliente
 
 
 ### 6	MODELO LÓGICO<br>
