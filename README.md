@@ -44,9 +44,8 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
-
+    Grupo DuCiclo: Gabrielle Azevedo e Renato Marques
+    Foi avaliado que o Fornece poderia ser retirado e o Pedido ser conectado nos itens pedidos, formando o cardápio.
 #### 5.2 Descrição dos dados 
     FUNCIONARIO: Tabela que armazena informações relativas ao funcionário da lanchonete
     cod_func: Campo que armazena o código específico do funcionário
