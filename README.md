@@ -148,6 +148,14 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+select * from endereco where bairro_cliente = 'Barcelona';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/1.bmp)
+select * from cardapio where valor_prod > 14;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/2.bmp)
+select nome_func from funcionario where tel_func = '(27) 99452-8524';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/3.bmp)
+select nome_cliente from cliente where cod_cliente = 3;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/4.bmp)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
