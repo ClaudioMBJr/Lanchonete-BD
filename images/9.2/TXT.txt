@@ -1,0 +1,7 @@
+select * from endereco where bairro_cliente = 'Barcelona';
+
+select * from cardapio where valor_prod > 14;
+
+select nome_func from funcionario where tel_func = '(27) 99452-8524';
+
+select nome_cliente from cliente where cod_cliente = 3;
