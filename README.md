@@ -161,9 +161,42 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
         select nome_cliente from cliente where cod_cliente = 3;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/4.bmp)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    a) Consultas que envolvam os operadores lógicos AND, OR e Not
+        select cod_pedido from pedido where (cod_cliente_pedido = 1 and cod_func_pedido = 3);
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/1.bmp)  
+
+        select cod_cliente from endereco where (rua_cliente = 'Andorinhas' or rua_cliente = 'Cascardo');
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/2.bmp)
+        
+        select rua_cliente from endereco where bairro_cliente not in ('Barcelona');
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/3.bmp)
+  
+        select nome_prod from cardapio where (valor_prod <=15 and valor_prod >12);
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/4.bmp)
+
+        select cod_pedido from cardapio_pedido where quant_pedido > 1;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/5.bmp)
+b) Consultas com operadores aritméticos 
+
+        select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod + 2.9) as valor_prod from cardapio where nome_prod = 'Misto';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/6.bmp)
+
+        select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod * 1.2) as novo_valor_prod from cardapio where valor_prod < 15;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/7.bmp)
+
+        select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod * 0.9) as novo_valor_prod from cardapio where valor_prod > 14;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/8.bmp)
+c) Consultas com operação de renomear nomes de campos ou tabelas
+
+        select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente as cidade, uf_cliente as uf from endereco;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/9.bmp)
+
+        select cod_prod, nome_prod, desc_prod as ingredientes_prod, valor_prod as preco_prod from cardapio;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/10.bmp)
+
+        select cod_pedido, data_pedido as hora_pedido, cod_cliente_pedido as cod_cliente, cod_func_pedido as cod_func from pedido where cod_func_pedido = 3;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/11.bmp)
+
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
