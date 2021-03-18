@@ -182,7 +182,7 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
         update cliente set nome_cliente = 'Claudio Magno' where nome_cliente = 'Claudio'
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%201.png)    
 
-        update cardaío set valor_prod = 15 where nome_prod = 'X-Egg Bacon'
+        update cardapio set valor_prod = 15 where nome_prod = 'X-Egg Bacon'
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%202.png)  
         
         update endereco set num_casa_cliente = 123 where rua_casa_cliente = 12
