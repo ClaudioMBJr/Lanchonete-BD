@@ -161,7 +161,8 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
         select nome_cliente from cliente where cod_cliente = 3;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/4.bmp)
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Consultas que envolvam os operadores lógicos AND, OR e Not
+ a) Consultas que envolvam os operadores lógicos AND, OR e Not
+    
         select cod_pedido from pedido where (cod_cliente_pedido = 1 and cod_func_pedido = 3);
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/1.bmp)  
 
@@ -176,6 +177,7 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
 
         select cod_pedido from cardapio_pedido where quant_pedido > 1;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/5.bmp)
+
 b) Consultas com operadores aritméticos 
 
         select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod + 2.9) as valor_prod from cardapio where nome_prod = 'Misto';
@@ -186,6 +188,7 @@ b) Consultas com operadores aritméticos
 
         select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod * 0.9) as novo_valor_prod from cardapio where valor_prod > 14;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/8.bmp)
+
 c) Consultas com operação de renomear nomes de campos ou tabelas
 
         select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente as cidade, uf_cliente as uf from endereco;
