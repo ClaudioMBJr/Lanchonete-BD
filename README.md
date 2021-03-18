@@ -191,15 +191,15 @@ b) Consultas com operadores aritméticos
 
 c) Consultas com operação de renomear nomes de campos ou tabelas
 
-        select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente as cidade, 
-        uf_cliente as uf from endereco;
+        select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente 
+        as cidade, uf_cliente as uf from endereco;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/9.bmp)
 
         select cod_prod, nome_prod, desc_prod as ingredientes_prod, valor_prod as preco_prod from cardapio;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/10.bmp)
 
-        select cod_pedido, data_pedido as hora_pedido, cod_cliente_pedido as cod_cliente, cod_func_pedido as cod_func from pedido where 
-        cod_func_pedido = 3;
+        select cod_pedido, data_pedido as hora_pedido, cod_cliente_pedido as cod_cliente, cod_func_pedido as cod_func from pedido 
+        where cod_func_pedido = 3;
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/11.bmp)
 
 
