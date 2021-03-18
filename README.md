@@ -170,8 +170,26 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
+        delete from cardapio_pedido where quant_pedido > 2
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%201.png)
+       
+        delete from endereco where bairro_cliente = 'Barcelona'
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%202.png)
+        
+        delete from telefone where codigo = 4
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%203.png)        
+
+        update cliente set nome_cliente = 'Claudio Magno' where nome_cliente = 'Claudio'
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%201.png)    
+
+        update cardaío set valor_prod = 15 where nome_prod = 'X-Egg Bacon'
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%202.png)  
+        
+        update endereco set num_casa_cliente = 123 where rua_casa_cliente = 12
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%203.png)  
+       
+        
+      
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
