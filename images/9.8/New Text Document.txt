@@ -1,0 +1,23 @@
+select endereco.cod_cliente, endereco.rua_cliente, cliente.cod_cliente
+from endereco
+left outer join cliente
+on (cliente.cod_cliente = endereco.cod_cliente)
+order by cliente.cod_cliente;
+
+select telefone.codigo, telefone.telefone, cliente.nome_cliente
+from cliente
+right outer join telefone
+on (telefone.codigo = cliente.cod_cliente)
+order by telefone.codigo;
+
+select pedido.cod_pedido, pedido.data_pedido, pedido.cod_cliente_pedido, pedido.cod_func_pedido, cliente.nome_cliente
+from pedido
+full outer join cliente
+on (cliente.cod_cliente = pedido.cod_cliente_pedido)
+order by pedido.cod_cliente_pedido;
+
+select pedido.data_pedido, pedido.cod_func_pedido, funcionario.cod_func
+from pedido
+full outer join funcionario
+on (pedido.cod_func_pedido = funcionario.cod_func)
+where funcionario.nome_func like '%i%';
