@@ -244,18 +244,26 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     select cliente.nome_cliente, endereco.bairro_cliente from cliente inner join endereco on (cliente.cod_cliente = endereco.cod_cliente where (endereco.bairro_cliente = 'Taquara')
+     select cliente.nome_cliente, endereco.bairro_cliente from cliente 
+     inner join endereco on (cliente.cod_cliente = endereco.cod_cliente 
+     where (endereco.bairro_cliente = 'Taquara')
+     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%201.png)  
 
-     select cardapio.nome_prod, sum (cardapio.valor_prod) from cardapio where (cardapio.valor_prod > (select min (valor_prod) from cardapio + 1) group by nome_prod, valor_prod order by cardapio.valor_prod
+     select cardapio.nome_prod, sum (cardapio.valor_prod) from cardapio 
+     where (cardapio.valor_prod > (select min (valor_prod) from cardapio + 1) 
+     group by nome_prod, valor_prod order by cardapio.valor_prod
      
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%202.png)  
 
-     select cliente.nome_cliente as nome, telefone.telefone as celular from cliente inner join telefone on cliente.cod_cliente = telefone.codigo order by nome desc
+     select cliente.nome_cliente as nome, telefone.telefone as celular from cliente 
+     inner join telefone on cliente.cod_cliente = telefone.codigo order by nome desc
      
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%203.png)  
 
-     select cardapio.nome_prod as nome, cardapio_pedido.quant_pedido as quantidade from cardapio_pedido inner join cardapio on cardapio_pedido.cod_item = cardapio.cod_prod order by quantidade
+     select cardapio.nome_prod as nome, cardapio_pedido.quant_pedido as quantidade 
+     from cardapio_pedido inner join cardapio 
+     on cardapio_pedido.cod_item = cardapio.cod_prod order by quantidade
      
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%204.png) 
      
