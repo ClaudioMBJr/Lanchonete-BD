@@ -237,7 +237,33 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
     a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-    a) Criar minimo 1 de cada tipo
+    select endereco.cod_cliente, endereco.rua_cliente, cliente.cod_cliente
+    from endereco
+    left outer join cliente
+    on (cliente.cod_cliente = endereco.cod_cliente)
+    order by cliente.cod_cliente;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/1.bmp)
+
+    select telefone.codigo, telefone.telefone, cliente.nome_cliente
+    from cliente
+    right outer join telefone
+    on (telefone.codigo = cliente.cod_cliente)
+    order by telefone.codigo;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/2.bmp)
+    
+    select pedido.cod_pedido, pedido.data_pedido, pedido.cod_cliente_pedido, pedido.cod_func_pedido, cliente.nome_cliente
+    from pedido
+    full outer join cliente
+    on (cliente.cod_cliente = pedido.cod_cliente_pedido)
+    order by pedido.cod_cliente_pedido;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/3.bmp)
+
+    select pedido.data_pedido, pedido.cod_func_pedido, funcionario.cod_func
+    from pedido
+    full outer join funcionario
+    on (pedido.cod_func_pedido = funcionario.cod_func)
+    where funcionario.nome_func like '%i%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/4.bmp)
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
