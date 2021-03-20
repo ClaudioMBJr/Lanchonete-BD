@@ -232,25 +232,27 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     select cliente.nome_cliente as nome, telefone.telefone as celular, endereco.bairro_cliente as bairro, pedido.data_pedido as data, cardapio_pedido.quant_pedido as quantidade, cardapio.nome_prod as pedido, funcionario.nome_func as atendente from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo) inner join endereco on (cliente.cod_cliente = endereco.cod_cliente) inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) inner join cardapio on (cardapio_pedido.cod_item = cardapio.cod_prod) inner join funcionario on (pedido.cod_func_pedido = funcionario.cod_func) order by data
     
-    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%201.png)
     
     select cliente.nome_cliente as nome, endereco.rua_cliente as rua, endereco.num_casa_cliente as numero_da_casa, endereco.bairro_cliente as bairro from cliente inner join endereco on (cliente.cod_cliente = endereco.cod_cliente)
     
-    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%202.png)
     
     select cliente.nome_cliente as nome, telefone.telefone as celular from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo)
     
-    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%203.png)
     
     select pedido.data_pedido as pedidos_atrasados, cliente.nome_cliente, cardapio_pedido.quant_pedido from cliente inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) order by pedidos_atrasados desc
     
-    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%204.png)
     
     select funcionario.nome_func as funcionario, cliente.nome_cliente as cliente_atendido from funcionario inner join pedido on (funcionario.cod_func = pedido.cod_func_pedido) inner join cliente on (pedido.cod_cliente_pedido = cliente.cod_cliente)
     
-    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%205.png)
     
     select cardapio.nome_prod as pedido, cardapio_pedido.quant_pedido as quantidade from cardapio inner join cardapio_pedido on (cardapio.cod_prod = cardapio_pedido.cod_item) order by quantidade
+    
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%206.png)
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
