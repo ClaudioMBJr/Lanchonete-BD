@@ -150,107 +150,126 @@ O cliente, possui um código que servirá para sua identificação, nome, um ou 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 
         select * from endereco where bairro_cliente = 'Barcelona';
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/1.bmp)
 
         select * from cardapio where valor_prod > 14;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/2.bmp)
 
         select nome_func from funcionario where tel_func = '(27) 99452-8524';
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/3.bmp)
 
         select nome_cliente from cliente where cod_cliente = 3;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.2/4.bmp)
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
+
  a) Consultas que envolvam os operadores lógicos AND, OR e Not
     
         select cod_pedido from pedido where (cod_cliente_pedido = 1 and cod_func_pedido = 3);
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/1.bmp)  
 
         select cod_cliente from endereco where (rua_cliente = 'Andorinhas' or rua_cliente = 'Cascardo');
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/2.bmp)
         
         select rua_cliente from endereco where bairro_cliente not in ('Barcelona');
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/3.bmp)
   
         select nome_prod from cardapio where (valor_prod <=15 and valor_prod >12);
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/4.bmp)
 
         select cod_pedido from cardapio_pedido where quant_pedido > 1;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/5.bmp)
 
 b) Consultas com operadores aritméticos 
 
         select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod + 2.9) as valor_prod from cardapio where nome_prod = 'Misto';
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/6.bmp)
 
         select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod * 1.2) as novo_valor_prod from cardapio where valor_prod < 15;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/7.bmp)
 
         select cod_prod, nome_prod, desc_prod, valor_prod, (valor_prod * 0.9) as novo_valor_prod from cardapio where valor_prod > 14;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/8.bmp)
 
 c) Consultas com operação de renomear nomes de campos ou tabelas
 
-        select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente 
-        as cidade, uf_cliente as uf from endereco;
+        select cod_cliente as cod, rua_cliente as rua, num_casa_cliente as num_casa, bairro_cliente as bairro, cidade_cliente as cidade, uf_cliente as uf from endereco;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/9.bmp)
 
         select cod_prod, nome_prod, desc_prod as ingredientes_prod, valor_prod as preco_prod from cardapio;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/10.bmp)
 
-        select cod_pedido, data_pedido as hora_pedido, cod_cliente_pedido as cod_cliente, cod_func_pedido as cod_func from pedido 
-        where cod_func_pedido = 3;
+        select cod_pedido, data_pedido as hora_pedido, cod_cliente_pedido as cod_cliente, cod_func_pedido as cod_func from pedido where cod_func_pedido = 3;
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/11.bmp)
-
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+
         delete from cardapio_pedido where quant_pedido > 2
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%201.png)
        
         delete from endereco where bairro_cliente = 'Barcelona'
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%202.png)
         
         delete from telefone where codigo = 4
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/delete%203.png)        
 
         update cliente set nome_cliente = 'Claudio Magno' where nome_cliente = 'Claudio'
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%201.png)    
 
         update cardapio set valor_prod = 15 where nome_prod = 'X-Egg Bacon'
+        
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%202.png)  
         
         update endereco set num_casa_cliente = 123 where rua_casa_cliente = 12
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%203.png)  
-       
         
-      
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%203.png)  
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    select cliente.nome_cliente as nome, telefone.telefone as celular, endereco.bairro_cliente as bairro, pedido.data_pedido as data, cardapio_pedido.quant_pedido as quantidade, cardapio.nome_prod as pedido, funcionario.nome_func as atendente from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo) inner join endereco on (cliente.cod_cliente = endereco.cod_cliente) inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) inner join cardapio on (cardapio_pedido.cod_item = cardapio.cod_prod) inner join funcionario on (pedido.cod_func_pedido = funcionario.cod_func) order by data
+
+        select cliente.nome_cliente as nome, telefone.telefone as celular, endereco.bairro_cliente as bairro, pedido.data_pedido as data, cardapio_pedido.quant_pedido as quantidade, cardapio.nome_prod as pedido, funcionario.nome_func as atendente from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo) inner join endereco on (cliente.cod_cliente = endereco.cod_cliente) inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) inner join cardapio on (cardapio_pedido.cod_item = cardapio.cod_prod) inner join funcionario on (pedido.cod_func_pedido = funcionario.cod_func) order by data
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%201.png)
     
-    select cliente.nome_cliente as nome, endereco.rua_cliente as rua, endereco.num_casa_cliente as numero_da_casa, endereco.bairro_cliente as bairro from cliente inner join endereco on (cliente.cod_cliente = endereco.cod_cliente)
+         select cliente.nome_cliente as nome, endereco.rua_cliente as rua, endereco.num_casa_cliente as numero_da_casa, endereco.bairro_cliente as bairro from cliente inner join endereco on (cliente.cod_cliente = endereco.cod_cliente)
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%202.png)
     
-    select cliente.nome_cliente as nome, telefone.telefone as celular from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo)
+         select cliente.nome_cliente as nome, telefone.telefone as celular from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo)
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%203.png)
     
-    select pedido.data_pedido as pedidos_atrasados, cliente.nome_cliente, cardapio_pedido.quant_pedido from cliente inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) order by pedidos_atrasados desc
+         select pedido.data_pedido as pedidos_atrasados, cliente.nome_cliente, cardapio_pedido.quant_pedido from cliente inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) order by pedidos_atrasados desc
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%204.png)
     
-    select funcionario.nome_func as funcionario, cliente.nome_cliente as cliente_atendido from funcionario inner join pedido on (funcionario.cod_func = pedido.cod_func_pedido) inner join cliente on (pedido.cod_cliente_pedido = cliente.cod_cliente)
+         select funcionario.nome_func as funcionario, cliente.nome_cliente as cliente_atendido from funcionario inner join pedido on (funcionario.cod_func = pedido.cod_func_pedido) inner join cliente on (pedido.cod_cliente_pedido = cliente.cod_cliente)
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%205.png)
     
-    select cardapio.nome_prod as pedido, cardapio_pedido.quant_pedido as quantidade from cardapio inner join cardapio_pedido on (cardapio.cod_prod = cardapio_pedido.cod_item) order by quantidade
+         select cardapio.nome_prod as pedido, cardapio_pedido.quant_pedido as quantidade from cardapio inner join cardapio_pedido on (cardapio.cod_prod = cardapio_pedido.cod_item) order by quantidade
     
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%206.png)
 
@@ -258,11 +277,13 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
     a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
+
     select endereco.cod_cliente, endereco.rua_cliente, cliente.cod_cliente
     from endereco
     left outer join cliente
     on (cliente.cod_cliente = endereco.cod_cliente)
     order by cliente.cod_cliente;
+    
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/1.bmp)
 
     select telefone.codigo, telefone.telefone, cliente.nome_cliente
@@ -270,6 +291,7 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
     right outer join telefone
     on (telefone.codigo = cliente.cod_cliente)
     order by telefone.codigo;
+    
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/2.bmp)
     
     select pedido.cod_pedido, pedido.data_pedido, pedido.cod_cliente_pedido, pedido.cod_func_pedido, cliente.nome_cliente
@@ -277,6 +299,7 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
     full outer join cliente
     on (cliente.cod_cliente = pedido.cod_cliente_pedido)
     order by pedido.cod_cliente_pedido;
+    
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/3.bmp)
 
     select pedido.data_pedido, pedido.cod_func_pedido, funcionario.cod_func
@@ -284,6 +307,7 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
     full outer join funcionario
     on (pedido.cod_func_pedido = funcionario.cod_func)
     where funcionario.nome_func like '%i%';
+    
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/4.bmp)
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
@@ -291,6 +315,7 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
+
      select cliente.nome_cliente, endereco.bairro_cliente from cliente 
      inner join endereco on (cliente.cod_cliente = endereco.cod_cliente 
      where (endereco.bairro_cliente = 'Taquara')
