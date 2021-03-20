@@ -218,7 +218,23 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.3/11.bmp)
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
+a) Criar outras 5 consultas que envolvam like ou ilike
+
+     select * from cliente where nome_cliente ilike '%l%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.4/1.bmp)
+
+     select cod_cliente, rua_cliente, num_casa_cliente, bairro_cliente from endereco where bairro_cliente like '%lona%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.4/2.bmp)
+
+     select nome_prod from cardapio where desc_prod ilike '%bacon%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.4/3.bmp)
+
+     select * from cardapio where nome_prod like '__Egg%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.4/4.bmp)
+
+     select tel_func from funcionario where nome_func like 'Jorge%';
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.4/5.bmp)
+    
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
