@@ -274,7 +274,27 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.6/9.6%206.png)
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-    a) Criar minimo 2 envolvendo algum tipo de junção
+
+    select cliente.nome_cliente as nome, count(pedido.cod_cliente_pedido) from cliente inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) group by nome
+    
+    
+    
+    select funcionario.nome_func as funcionario, count(pedido.cod_func_pedido) from funcionario inner join pedido on (funcionario.cod_func = pedido.cod_func_pedido) group by funcionario
+    
+    
+    
+    select cardapio_pedido.cod_item as codigo_lanche, sum(cardapio_pedido.quant_pedido) as quantidade_total from cardapio_pedido group by codigo_lanche
+    
+    
+    select telefone.telefone as telefone, telefone.codigo from telefone group by telefone, telefone.codigo
+    
+    
+    
+    select cardapio.nome_prod, avg(cardapio.valor_prod) from cardapio where (cardapio.valor_prod > 14) group by cardapio.nome_prod
+    
+    
+    
+    select funcionario.nome_func, funcionario.tel_func from funcionario group by nome_func, tel_func
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
 
