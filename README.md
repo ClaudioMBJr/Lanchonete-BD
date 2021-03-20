@@ -334,8 +334,52 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.8/4.bmp)
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+   a) Uma junção que envolva Self Join
+       
+       select A.nome_prod as prod1, B.nome_prod as prod2, 
+       A.valor_prod as valor1, B.valor_prod as valor2
+       from cardapio A, cardapio B
+       where A.valor_prod = B.valor_prod;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/6.bmp)
+       
+ b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+ 
+       create view produtos as
+       select cod_prod as Id,
+       nome_prod as Produto,
+       desc_prod as Descricao,
+       valor_prod as Valor
+       from cardapio;
+       select * from produtos;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/1.bmp)
+
+       create view trab as
+       select cod_func,
+       nome_func as Nome,
+       tel_func as Telefone
+       from funcionario;
+       select * from trab;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/2.bmp)
+
+       drop view produtos;
+       select * from produtos;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/3.bmp)
+
+       create view ordens as
+       select cod_pedido as cod,
+       data_pedido as hora,
+       cod_cliente_pedido as clienteN,
+       cod_func_pedido as funcN
+       from pedido;
+       select * from ordens;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/4.bmp)
+
+       create view ruas as
+       select rua_cliente as rua
+       from endereco where bairro_cliente = 'Taquara';
+       select * from ruas;
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/5.bmp)
+
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
