@@ -230,8 +230,7 @@ c) Consultas com operação de renomear nomes de campos ou tabelas
       
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+    select cliente.nome_cliente as nome, telefone.telefone as celular, endereco.bairro_cliente as bairro, pedido.data_pedido as data, cardapio_pedido.quant_pedido as quantidade, cardapio.nome_prod as pedido, funcionario.nome_func as atendente from cliente inner join telefone on (cliente.cod_cliente = telefone.codigo) inner join endereco on (cliente.cod_cliente = endereco.cod_cliente) inner join pedido on (cliente.cod_cliente = pedido.cod_cliente_pedido) inner join cardapio_pedido on (pedido.cod_pedido = cardapio_pedido.cod_pedido) inner join cardapio on (cardapio_pedido.cod_item = cardapio.cod_prod) inner join funcionario on (pedido.cod_func_pedido = funcionario.cod_func) order by data
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
