@@ -1,5 +1,5 @@
 # TRABALHO 01:  Lanchonete BD 
-Trabalho desenvolvido durante a disciplina de BD1
+Trabalho desenvolvido durante a disciplina de BD1 
 
 # Sumário 
  
