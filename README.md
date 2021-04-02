@@ -355,7 +355,7 @@ a) Criar outras 5 consultas que envolvam like ou ilike
        A.valor_prod as valor1, B.valor_prod as valor2
        from cardapio A, cardapio B
        where A.valor_prod = B.valor_prod;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/6.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/1.bmp)
        
  b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
  
@@ -366,7 +366,7 @@ a) Criar outras 5 consultas que envolvam like ou ilike
        valor_prod as Valor
        from cardapio;
        select * from produtos;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/1.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/2.bmp)
 
        create view trab as
        select cod_func,
@@ -374,11 +374,11 @@ a) Criar outras 5 consultas que envolvam like ou ilike
        tel_func as Telefone
        from funcionario;
        select * from trab;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/2.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/3.bmp)
 
        drop view produtos;
        select * from produtos;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/3.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/4.bmp)
 
        create view ordens as
        select cod_pedido as cod,
@@ -387,13 +387,13 @@ a) Criar outras 5 consultas que envolvam like ou ilike
        cod_func_pedido as funcN
        from pedido;
        select * from ordens;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/4.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/5.bmp)
 
        create view ruas as
        select rua_cliente as rua
        from endereco where bairro_cliente = 'Taquara';
        select * from ruas;
-![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/5.bmp)
+![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.9/6.bmp)
 
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
