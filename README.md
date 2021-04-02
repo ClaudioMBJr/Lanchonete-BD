@@ -399,15 +399,16 @@ a) Criar outras 5 consultas que envolvam like ou ilike
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
 
      select cliente.nome_cliente, endereco.bairro_cliente from cliente 
-     inner join endereco on (cliente.cod_cliente = endereco.cod_cliente 
+     inner join endereco on (cliente.cod_cliente = endereco.cod_cliente) 
      where (endereco.bairro_cliente = 'Taquara')
      
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%201.png)  
 
      select cardapio.nome_prod, sum (cardapio.valor_prod) from cardapio 
-     where (cardapio.valor_prod > (select min (valor_prod) from cardapio + 1) 
-     group by nome_prod, valor_prod order by cardapio.valor_prod
-     
+     where cardapio.valor_prod > ((select min (valor_prod) from cardapio) + 1) 
+     group by nome_prod, valor_prod
+     order by cardapio.valor_prod
+
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/9.10/9.10%202.png)  
 
      select cliente.nome_cliente as nome, telefone.telefone as celular from cliente 
