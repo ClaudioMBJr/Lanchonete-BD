@@ -13,7 +13,7 @@ Diogo Tomas : dreedd020@gmail.com<br>
 > Diante dos desafios encontrados durante a pandemia, a lanchonete BD, uma startup no ramo, é uma tentativa de seus donos para tentar seu negócio próprio, buscando oportunidades de negócio. Com exemplos de diversos negócios semelhantes no mesmo ramo, o foco principal da lanchonete é a organização buscando sair na frente e se manter sempre firme, tendo em vista que muitas lanchonetes tem uma queda brusca nas vendas logo após o "boom" inicial. Com um sistema de negócio simples, mas eficiente, o objetivo é um sucesso a curto prazo e a expansão para franquias, seguindo a mesma regra de negócio implementada em seu sistema de controle, de modo a garantir a padronização e qualidade.
  
 
-### 3.MINI-MUNDO<br>
+### 3.MINI-MUNDO<br> 
 
 > O sistema tem como base gerenciar o funcionamento de uma lanchonete otimizando o seu rendimento e a organização do negócio.
 O cliente, possui um código que servirá para sua identificação, nome, um ou mais telefones e endereço detalhado comportando desde estado até o número da casa. Nesse sistema também é armazedo os dados do funcionário que possui um telefone para contato e o nome, além do código de identificação. O cardápio é armazendao possuindo nome, descrição, valor e um código de identificação para cada produto. Por fim, essas 3 entidades (cliente, funcionário e cardápio) se relacionam onde o cliente ao escolher um pedido do cardápio o repassa para o funcionário onde se armazenam a data/hora do pedido e é gerado um novo código para o controle do mesmo.
