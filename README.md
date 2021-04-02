@@ -258,7 +258,7 @@ a) Criar outras 5 consultas que envolvam like ou ilike
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%202.png)  
         
-        update endereco set num_casa_cliente = 123 where rua_casa_cliente = 12
+        update endereco set num_casa_cliente = 123
         
 ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/update%203.png)  
 
