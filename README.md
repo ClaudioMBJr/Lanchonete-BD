@@ -436,6 +436,9 @@ a) Criar outras 5 consultas que envolvam like ou ilike
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
+
+#### Slides: ![Alt text](https://github.com/ClaudioMBJr/Lanchonete-BD/blob/master/images/Lanchonete%20BD.pdf)
+
 #### b) Tempo de apresentação 6:40 
 
 ># Marco de Entrega 03: Itens 10 e 11<br>
